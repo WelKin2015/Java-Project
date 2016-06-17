@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6U6-Br-VD4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="FvS-d1-hfX">
+            <objects>
+                <viewController id="6U6-Br-VD4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wJb-ly-UIW"/>
+                        <viewControllerLayoutGuide type="bottom" id="GDO-Fl-czb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WvS-mt-0YY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="背景图" translatesAutoresizingMaskIntoConstraints="NO" id="16E-ww-bA4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hz-e6-Z07" userLabel="输入框">
+                                <rect key="frame" x="40" y="140" width="520" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Po8-EQ-lpc">
+                                        <rect key="frame" x="0.0" y="10" width="520" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Lm-kS-GxP">
+                                        <rect key="frame" x="0.0" y="73" width="520" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景框" translatesAutoresizingMaskIntoConstraints="NO" id="hp8-W3-5OU">
+                                        <rect key="frame" x="0.0" y="0.0" width="520" height="100"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hp8-W3-5OU" secondAttribute="trailing" id="98p-Wi-ILV"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Lm-kS-GxP" secondAttribute="trailing" id="C4q-z0-GON"/>
+                                    <constraint firstAttribute="trailing" secondItem="Po8-EQ-lpc" secondAttribute="trailing" id="Nah-k8-E4n"/>
+                                    <constraint firstItem="Po8-EQ-lpc" firstAttribute="leading" secondItem="2hz-e6-Z07" secondAttribute="leading" id="OKI-7f-73X"/>
+                                    <constraint firstAttribute="height" constant="100" id="TyQ-zs-AnD"/>
+                                    <constraint firstItem="hp8-W3-5OU" firstAttribute="leading" secondItem="2hz-e6-Z07" secondAttribute="leading" id="aMR-mD-SQ1"/>
+                                    <constraint firstItem="hp8-W3-5OU" firstAttribute="top" secondItem="2hz-e6-Z07" secondAttribute="top" id="cPR-q8-2mH"/>
+                                    <constraint firstItem="8Lm-kS-GxP" firstAttribute="leading" secondItem="2hz-e6-Z07" secondAttribute="leading" id="lud-rn-kFY"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Lm-kS-GxP" secondAttribute="bottom" constant="10" id="r6x-Me-uNr"/>
+                                    <constraint firstAttribute="bottom" secondItem="hp8-W3-5OU" secondAttribute="bottom" id="uSb-b5-sAi"/>
+                                    <constraint firstItem="Po8-EQ-lpc" firstAttribute="top" secondItem="2hz-e6-Z07" secondAttribute="top" constant="10" id="ygK-vi-CWS"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96N-FC-BTy">
+                                <rect key="frame" x="40" y="270" width="520" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mNj-LE-d0b"/>
+                                </constraints>
+                                <state key="normal" title="登录" backgroundImage="button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZ3-a2-bQ4">
+                                <rect key="frame" x="79" y="328" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="忘记密码？"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqg-pd-rZn">
+                                <rect key="frame" x="433" y="318" width="60" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="快速注册"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qh-5P-3kt">
+                                <rect key="frame" x="93" y="460" width="30" height="30"/>
+                                <state key="normal" title="微信"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bk-l7-USz">
+                                <rect key="frame" x="442" y="460" width="30" height="30"/>
+                                <state key="normal" title="人人"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfM-Hj-abV">
+                                <rect key="frame" x="274" y="476" width="30" height="30"/>
+                                <state key="normal" title="新浪"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gEK-5z-xcZ">
+                                <rect key="frame" x="141" y="399" width="273" height="29"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2hz-e6-Z07" firstAttribute="leading" secondItem="WvS-mt-0YY" secondAttribute="leading" constant="40" id="3Oz-CY-QDA"/>
+                            <constraint firstItem="96N-FC-BTy" firstAttribute="top" secondItem="2hz-e6-Z07" secondAttribute="bottom" constant="30" id="CeX-mV-glB"/>
+                            <constraint firstItem="2hz-e6-Z07" firstAttribute="top" secondItem="wJb-ly-UIW" secondAttribute="bottom" constant="120" id="Eey-gO-raJ"/>
+                            <constraint firstAttribute="trailing" secondItem="2hz-e6-Z07" secondAttribute="trailing" constant="40" id="hge-ac-ENA"/>
+                            <constraint firstAttribute="trailing" secondItem="96N-FC-BTy" secondAttribute="trailing" constant="40" id="kw8-hy-lX7"/>
+                            <constraint firstItem="96N-FC-BTy" firstAttribute="leading" secondItem="WvS-mt-0YY" secondAttribute="leading" constant="40" id="usA-AH-E6W"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKC-zz-6oc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373" y="351"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button" width="345" height="50"/>
+        <image name="背景图" width="375" height="667"/>
+        <image name="背景框" width="345" height="100"/>
+    </resources>
+</document>
